@@ -309,7 +309,7 @@
     "update": {
       "required": [
         "post",
-       "message"
+        "message"
       ],
       "method": "POST",
       "formats": [
