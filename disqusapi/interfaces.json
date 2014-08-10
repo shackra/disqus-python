@@ -305,6 +305,17 @@
         "json",
         "jsonp"
       ]
+    },
+    "update": {
+      "required": [
+        "post",
+       "message"
+      ],
+      "method": "POST",
+      "formats": [
+        "json",
+        "jsonp"
+      ]
     }
   },
   "blacklists": {
