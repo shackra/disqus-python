@@ -571,6 +571,17 @@
     }
   },
   "forums": {
+    "addModerator": {
+      "required": [
+        "forum",
+        "user"
+      ],
+      "method": "POST",
+      "formats": [
+        "json",
+        "jsonp"
+      ]
+    },
     "create": {
       "required": [
         "website",
@@ -650,6 +661,16 @@
         "forum"
       ],
       "method": "GET",
+      "formats": [
+        "json",
+        "jsonp"
+      ]
+    },
+    "removeModerator": {
+      "required": [
+        "moderator"
+      ],
+      "method": "POST",
       "formats": [
         "json",
         "jsonp"
