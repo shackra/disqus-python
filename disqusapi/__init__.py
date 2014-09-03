@@ -176,7 +176,8 @@ class DisqusAPI(Resource):
         self.secret_key = secret_key
         self.public_key = public_key
         if not public_key and not secret_key:
-            warnings.warn("You should at least pass ``public_key`` if you don't pass your secret key.")
+            warnings.warn("You should at least pass ``public_key`` if you "
+                          "don't pass your secret key.")
         self.format = format
         self.version = version
         self.timeout = timeout or socket.getdefaulttimeout()
