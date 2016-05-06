@@ -5,6 +5,7 @@ from setuptools.command.test import test as TestCommand
 
 
 class PyTest(TestCommand):
+
     def finalize_options(self):
         TestCommand.finalize_options(self)
         self.test_args = []
@@ -17,12 +18,12 @@ class PyTest(TestCommand):
 
 
 setup(
-    name='disqus-python',
+    name='shackra-disqus-python',
     version='0.5.0',
-    author='DISQUS',
-    author_email='opensource@disqus.com',
-    url='https://github.com/disqus/disqus-python',
-    description='Disqus API Bindings',
+    author='shackra',
+    author_email='elcorreo@deshackra.com',
+    url='https://github.com/shackra/disqus-python',
+    description='Disqus API Bindings, updated and compatible with Python 3.x',
     packages=find_packages(),
     zip_safe=False,
     license='Apache License 2.0',
